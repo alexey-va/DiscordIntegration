@@ -1,0 +1,10 @@
+--- DiscordClient.java
++++ DiscordClient.java
+@@ -95,5 +95,6 @@
+                 .setAudioEnabled(false)
+                 .setBulkDeleteSplittingEnabled(false)
+                 .addEventListener(this);
+-
++            DiscordTransport.configure(builder);
++
+             for (EventListener eventListener : this.eventListeners) {
